@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		FBE7A9E725F5973000235AB9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE7A9E625F5973000235AB9 /* main.swift */; };
+		FBE7A9F025FAF35E00235AB9 /* SwiftUtils in Frameworks */ = {isa = PBXBuildFile; productRef = FBE7A9EF25FAF35E00235AB9 /* SwiftUtils */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE7A9F025FAF35E00235AB9 /* SwiftUtils in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,9 @@
 			dependencies = (
 			);
 			name = SwiftExamples;
+			packageProductDependencies = (
+				FBE7A9EF25FAF35E00235AB9 /* SwiftUtils */,
+			);
 			productName = SwiftExamples;
 			productReference = FBE7A9E325F5973000235AB9 /* SwiftExamples */;
 			productType = "com.apple.product-type.tool";
@@ -105,6 +110,9 @@
 				Base,
 			);
 			mainGroup = FBE7A9DA25F5973000235AB9;
+			packageReferences = (
+				FBE7A9EE25FAF35E00235AB9 /* XCRemoteSwiftPackageReference "SwiftUtils" */,
+			);
 			productRefGroup = FBE7A9E425F5973000235AB9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -281,6 +289,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FBE7A9EE25FAF35E00235AB9 /* XCRemoteSwiftPackageReference "SwiftUtils" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JHorace/SwiftUtils.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FBE7A9EF25FAF35E00235AB9 /* SwiftUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBE7A9EE25FAF35E00235AB9 /* XCRemoteSwiftPackageReference "SwiftUtils" */;
+			productName = SwiftUtils;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FBE7A9DB25F5973000235AB9 /* Project object */;
 }
